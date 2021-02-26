@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Gress
+    uniqueID: 1121716943
+    locked: 0
+  - name: Elementer
+    uniqueID: 2928059125
+    locked: 0
+  - name: "T\xE5rn"
+    uniqueID: 769923785
+    locked: 0
+  - name: Enemies
+    uniqueID: 1266468943
+    locked: 0
