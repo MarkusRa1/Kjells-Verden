@@ -9,7 +9,6 @@ public class Path : MonoBehaviour
     Transform[] children;
 
     ArrayList Mobs;
-    public GameObject Mobfaen;
     public float MoveSpeed;
     public Transform EnemiesCollection;
 

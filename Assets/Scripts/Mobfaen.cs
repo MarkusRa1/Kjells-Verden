@@ -15,6 +15,7 @@ public class Mobfaen : MonoBehaviour
     Transform targetWayPoint;
 
     public float speed = 4f;
+    public int health = 100;
 
     // put the points from unity interface
 
@@ -51,5 +52,19 @@ public class Mobfaen : MonoBehaviour
             currentWayPoint++;
             targetWayPoint = wayPointList[currentWayPoint];
         }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
     }
 }
