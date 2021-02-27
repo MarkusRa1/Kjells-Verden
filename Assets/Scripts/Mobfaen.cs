@@ -8,41 +8,63 @@ public class Mobfaen : MonoBehaviour
 
     int NodeCount;
     string name;
-    static Vector3 CurrentPositionHolder;
     int CurrentNode;
+    public Transform[] wayPointList;
 
-    void Start()
+    public int currentWayPoint = 0;
+    Transform targetWayPoint;
+
+    public float speed = 4f;
+    public int health = 100;
+
+    // put the points from unity interface
+
+    public void NewStart(Transform[] Nodes)
     {
         NodeCount = 0;
-    }
-
-    public int GetNodeCount(){
-        return NodeCount;
-    }
-
-    public void IncNodeCount(){
-        NodeCount++;
-    }
-
-    public void SetName(string givenName){
-        name = givenName;
-    }
-
-    public string GetName(){
-        return name;
-    }
-
-    public Vector3 GetCurrentPositionHolder(){
-        return CurrentPositionHolder;
-    }
-
-    public void SetCurrentPositionHolder(Vector3 NewPositionHolder){
-        CurrentPositionHolder = NewPositionHolder;
+        wayPointList = Nodes;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        // check if we have somewere to walk
+        if (currentWayPoint < this.wayPointList.Length)
+        {
+            Debug.Log("Walk");
+            if (targetWayPoint == null)
+                targetWayPoint = wayPointList[currentWayPoint];
+            Walk();
+        } 
+        else
+        {
+            Debug.Log("Game Over");
+        }
+    }
+
+    void Walk()
+    {
+        // move towards the target
+        transform.position = Vector3.MoveTowards(transform.position, targetWayPoint.position, speed * Time.deltaTime);
+
+        if (transform.position == targetWayPoint.position)
+        {
+            currentWayPoint++;
+            targetWayPoint = wayPointList[currentWayPoint];
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
     }
 }
