@@ -32307,8 +32307,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1116180872}
   - component: {fileID: 1116180871}
-  m_Layer: 0
-  m_Name: GameObject
+  m_Layer: 8
+  m_Name: EnemiesCollection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50776,6 +50776,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d735c698182f09d4ab29d41113d4308a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PrefabMonster: {fileID: 5335874202337258731, guid: e2bc779c150f9a3449d0f35231ddaccf,
+    type: 3}
   Mobfaen: {fileID: 1767635247}
   MoveSpeed: 0.005
 --- !u!1 &1776628863
