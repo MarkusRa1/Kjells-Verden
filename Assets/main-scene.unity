@@ -2745,54 +2745,54 @@ Transform:
   m_Children:
   - {fileID: 205473467}
   - {fileID: 2003458353}
-  - {fileID: 1955083612}
-  - {fileID: 1589822528}
+  - {fileID: 1851783780}
+  - {fileID: 1089642883}
   - {fileID: 804480460}
   - {fileID: 134269416}
   - {fileID: 617891047}
   - {fileID: 160189081}
   - {fileID: 1169142921}
-  - {fileID: 1548417714}
+  - {fileID: 547114858}
   - {fileID: 1580353601}
   - {fileID: 158129383}
-  - {fileID: 549341882}
-  - {fileID: 1596801490}
-  - {fileID: 1102276870}
-  - {fileID: 2104539206}
+  - {fileID: 26010009}
+  - {fileID: 617617377}
+  - {fileID: 532392389}
+  - {fileID: 1381897102}
   - {fileID: 606011155}
-  - {fileID: 1822373230}
-  - {fileID: 703725205}
+  - {fileID: 636281383}
+  - {fileID: 649479999}
   - {fileID: 252740672}
-  - {fileID: 1997261784}
+  - {fileID: 776176108}
   - {fileID: 180931753}
   - {fileID: 717560950}
   - {fileID: 1098054193}
   - {fileID: 302184710}
   - {fileID: 530947222}
   - {fileID: 854259149}
-  - {fileID: 1851783780}
+  - {fileID: 1955083612}
   - {fileID: 2011762383}
-  - {fileID: 1089642883}
+  - {fileID: 1589822528}
+  - {fileID: 1992738074}
   - {fileID: 1518250815}
   - {fileID: 460125585}
-  - {fileID: 1992738074}
-  - {fileID: 599981154}
   - {fileID: 1931343709}
-  - {fileID: 547114858}
+  - {fileID: 2104539206}
   - {fileID: 1609384087}
-  - {fileID: 646111722}
-  - {fileID: 26010009}
-  - {fileID: 617617377}
-  - {fileID: 532392389}
-  - {fileID: 1381897102}
+  - {fileID: 1548417714}
+  - {fileID: 1596801490}
+  - {fileID: 1997261784}
   - {fileID: 1667851282}
-  - {fileID: 636281383}
-  - {fileID: 649479999}
-  - {fileID: 1310790444}
-  - {fileID: 776176108}
-  - {fileID: 589244357}
-  - {fileID: 1170818889}
+  - {fileID: 1822373230}
+  - {fileID: 599981154}
+  - {fileID: 549341882}
+  - {fileID: 646111722}
+  - {fileID: 1102276870}
+  - {fileID: 1963310340}
   - {fileID: 1476185839}
+  - {fileID: 1170818889}
+  - {fileID: 703725205}
+  - {fileID: 589244357}
   - {fileID: 1152689944}
   - {fileID: 725396219}
   m_Father: {fileID: 1505537676}
@@ -9046,7 +9046,7 @@ RectTransform:
   - {fileID: 1860851517}
   - {fileID: 2093379182}
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9913,7 +9913,7 @@ Transform:
   m_Children:
   - {fileID: 1423456122}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &395409064
 GameObject:
@@ -11211,7 +11211,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &444581774
 GameObject:
@@ -11788,6 +11788,7 @@ GameObject:
   - component: {fileID: 460926333}
   - component: {fileID: 460926332}
   - component: {fileID: 460926331}
+  - component: {fileID: 460926334}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -11860,6 +11861,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &460926334
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460926330}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e3478af259f57144b8942f346af4c8b7, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &462874509
 GameObject:
   m_ObjectHideFlags: 0
@@ -15997,7 +16094,7 @@ RectTransform:
   - {fileID: 1737379506}
   - {fileID: 904621473}
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -25410,7 +25507,7 @@ Transform:
   - {fileID: 1793522683}
   - {fileID: 340507335}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &943006115
 GameObject:
@@ -32579,7 +32676,7 @@ RectTransform:
   - {fileID: 1048154667}
   - {fileID: 566630457}
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -36760,7 +36857,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1392274153
 GameObject:
@@ -38197,7 +38294,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1455672430
 GameObject:
@@ -41196,12 +41293,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 16.68, y: 0.88, z: -3.6904297}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 612679162}
-  - {fileID: 1229540595}
-  - {fileID: 339347216}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1518250814
 PrefabInstance:
@@ -44304,7 +44398,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1652053718
 GameObject:
@@ -45363,7 +45457,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1722850607
 GameObject:
@@ -49782,7 +49876,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -1.514, y: 0, z: 0}
 --- !u!1 &1880761619
 GameObject:
@@ -52633,6 +52727,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8552570291598617937, guid: bf462882706828c44a4465986b6fb8d2,
     type: 3}
   m_PrefabInstance: {fileID: 1955083611}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1963310340 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8552570291598617937, guid: bf462882706828c44a4465986b6fb8d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1310790443}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1974903673
 GameObject:
