@@ -23217,7 +23217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 1171714548}
-  bulletPrefab: {fileID: 795968087927076285, guid: 65653a4cc6bb53049a47292f32b47a28,
+  bulletPrefab: {fileID: 9102568727905952570, guid: e53c6488170cecc4cbc9e958429fb618,
     type: 3}
   enemyContainer: {fileID: 1801167098}
 --- !u!1 &1155884896
@@ -35225,8 +35225,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 812650771}
-  - {fileID: 139533946}
   - {fileID: 396565844}
+  - {fileID: 139533946}
   - {fileID: 17277776}
   m_Father: {fileID: 0}
   m_RootOrder: 16
@@ -41684,72 +41684,3 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1001 &7246174973272520519
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5750366960497576493, guid: e53c6488170cecc4cbc9e958429fb618,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 5750366960497576493, guid: e53c6488170cecc4cbc9e958429fb618,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.7923792
-      objectReference: {fileID: 0}
-    - target: {fileID: 5750366960497576493, guid: e53c6488170cecc4cbc9e958429fb618,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.32842177
-      objectReference: {fileID: 0}
-    - target: {fileID: 5750366960497576493, guid: e53c6488170cecc4cbc9e958429fb618,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -11.399831
-      objectReference: {fileID: 0}
-    - target: {fileID: 5750366960497576493, guid: e53c6488170cecc4cbc9e958429fb618,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5750366960497576493, guid: e53c6488170cecc4cbc9e958429fb618,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5750366960497576493, guid: e53c6488170cecc4cbc9e958429fb618,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5750366960497576493, guid: e53c6488170cecc4cbc9e958429fb618,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5750366960497576493, guid: e53c6488170cecc4cbc9e958429fb618,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5750366960497576493, guid: e53c6488170cecc4cbc9e958429fb618,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5750366960497576493, guid: e53c6488170cecc4cbc9e958429fb618,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9102568727905952570, guid: e53c6488170cecc4cbc9e958429fb618,
-        type: 3}
-      propertyPath: m_Name
-      value: MissileKjell
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e53c6488170cecc4cbc9e958429fb618, type: 3}

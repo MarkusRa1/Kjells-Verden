@@ -11,15 +11,12 @@ public class Bullet : MonoBehaviour
     void TheStart(Transform enemyContainer)
     {
         Transform enemy = FindClosestChild(enemyContainer);
-        Debug.Log(enemy);
-        Debug.Log(enemyContainer);
         if (enemy != null)
         {
-            Debug.Log("riktig");
             Vector2 direction = enemy.position - transform.position;
             rb.velocity = direction/direction.magnitude * speed;
             Destroy(gameObject, 10f);
-        } 
+        }
         else
         {
             Destroy(gameObject);
@@ -52,7 +49,6 @@ public class Bullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
         Enemy enemy = hitInfo.GetComponent<Enemy>();
-        //Debug.Log()
         if (enemy != null)
         {
             enemy.TakeDamage(damage);
