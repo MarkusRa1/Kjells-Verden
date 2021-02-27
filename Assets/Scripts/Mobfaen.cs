@@ -38,7 +38,7 @@ public class Mobfaen : MonoBehaviour
         else
         {
             Debug.Log("Game Over");
-            transform.parent.GetComponent<TaperEnemies>().TaperObject.SetActive(true);
+            transform.parent.GetComponent<TaperEnemies>().TaperObject.GetComponent<Taper>().GameOver(Time.realtimeSinceStartup);
             Debug.Log(Time.realtimeSinceStartup);
         }
     }
@@ -48,7 +48,7 @@ public class Mobfaen : MonoBehaviour
         // move towards the target
         transform.position = Vector3.MoveTowards(transform.position, targetWayPoint.position, speed * Time.deltaTime);
 
-        if (transform.position == targetWayPoint.position)
+        if (transform.position == targetWayPoint.position && currentWayPoint < wayPointList.Length)
         {
             currentWayPoint++;
             targetWayPoint = wayPointList[currentWayPoint];

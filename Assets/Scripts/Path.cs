@@ -8,29 +8,22 @@ public class Path : MonoBehaviour
     Node [] PathNode;
     Transform[] children;
 
-    ArrayList Mobs;
     public float MoveSpeed;
     public Transform EnemiesCollection;
 
-    int MobCount;
 
     // Start is called before the first frame update
     void Start()
     {
-        MobCount = 0;
         PathNode = GetComponentsInChildren<Node> ();
         children = GetComponentsInChildren<Transform> ();
-        Mobs = new ArrayList();
         MoveSpeed = 0.1F;
         //SpawnMonster();
         InvokeRepeating("SpawnMonster", 0, 0.5f);
-        InvokeRepeating("Move", 0.5f, 0.5f);
     }
 
     public void AddMobfaen(GameObject mobfaen) {
-        MobCount++;
         Mobfaen mob = mobfaen.GetComponent<Mobfaen>();
-        Mobs.Add(mob);
         mob.transform.parent = EnemiesCollection;
 
     }
