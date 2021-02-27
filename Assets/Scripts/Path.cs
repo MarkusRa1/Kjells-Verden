@@ -12,6 +12,7 @@ public class Path : MonoBehaviour
     float Timer;
     int CurrentNode;
     static Vector3 CurrentPositionHolder;
+    public Transform EnemiesCollection;
 
     int MobCount;
 
@@ -31,6 +32,7 @@ public class Path : MonoBehaviour
         mob.SetCurrentPositionHolder(PathNode[0].transform.position);
         mob.SetName("Mob" + MobCount.ToString());
         Mobs.Add(mob);
+        mob.transform.parent = EnemiesCollection;
     }
 /*
     // check current node and have Mob move towards it
@@ -59,14 +61,15 @@ public class Path : MonoBehaviour
             } else {
                 if (mob.GetNodeCount() < PathNode.Length){
                     mob.IncNodeCount();
-                    CheckNode(mob);
+                    //CheckNode(mob);
                 } else {
                     Debug.Log("GAME OVER");
                     enabled = false;
+                    Destroy(mob);
                 }
             }
         }
 
-        SpawnMonster();
+        //SpawnMonster();
     }
 }

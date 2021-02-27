@@ -50780,6 +50780,7 @@ MonoBehaviour:
     type: 3}
   Mobfaen: {fileID: 1767635247}
   MoveSpeed: 0.005
+  EnemiesCollection: {fileID: 1116180872}
 --- !u!1 &1776628863
 GameObject:
   m_ObjectHideFlags: 0
