@@ -31,7 +31,6 @@ public class Mobfaen : MonoBehaviour
         // check if we have somewere to walk
         if (currentWayPoint < this.wayPointList.Length)
         {
-            Debug.Log("Walk");
             if (targetWayPoint == null)
                 targetWayPoint = wayPointList[currentWayPoint];
             Walk();
@@ -39,6 +38,8 @@ public class Mobfaen : MonoBehaviour
         else
         {
             Debug.Log("Game Over");
+            transform.parent.GetComponent<TaperEnemies>().TaperObject.SetActive(true);
+            Debug.Log(Time.realtimeSinceStartup);
         }
     }
 

@@ -18,7 +18,7 @@ public class Missile : MonoBehaviour
         {
             Vector2 direction = target.position - transform.position;
             rb.velocity = direction / direction.magnitude * speed;
-            Destroy(gameObject, 20f);
+            Destroy(gameObject, 50f);
         }
         else
         {

@@ -53,3 +53,9 @@ TagManager:
   - name: Enemies
     uniqueID: 1266468943
     locked: 0
+  - name: GameOver1
+    uniqueID: 643316723
+    locked: 0
+  - name: GameOver2
+    uniqueID: 1285423829
+    locked: 0
