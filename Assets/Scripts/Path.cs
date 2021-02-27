@@ -6,12 +6,11 @@ public class Path : MonoBehaviour
 {
     public GameObject PrefabMonster;
     Node [] PathNode;
+    Transform[] children;
+
     ArrayList Mobs;
     public GameObject Mobfaen;
     public float MoveSpeed;
-    float Timer;
-    int CurrentNode;
-    static Vector3 CurrentPositionHolder;
     public Transform EnemiesCollection;
 
     int MobCount;
@@ -21,18 +20,20 @@ public class Path : MonoBehaviour
     {
         MobCount = 0;
         PathNode = GetComponentsInChildren<Node> ();
+        children = GetComponentsInChildren<Transform> ();
         Mobs = new ArrayList();
         MoveSpeed = 0.1F;
-        SpawnMonster();
+        //SpawnMonster();
+        InvokeRepeating("SpawnMonster", 0, 0.5f);
+        InvokeRepeating("Move", 0.5f, 0.5f);
     }
 
     public void AddMobfaen(GameObject mobfaen) {
         MobCount++;
         Mobfaen mob = mobfaen.GetComponent<Mobfaen>();
-        mob.SetCurrentPositionHolder(PathNode[0].transform.position);
-        mob.SetName("Mob" + MobCount.ToString());
         Mobs.Add(mob);
         mob.transform.parent = EnemiesCollection;
+
     }
 /*
     // check current node and have Mob move towards it
@@ -43,33 +44,11 @@ public class Path : MonoBehaviour
 */
     void SpawnMonster()
     {
-        GameObject enemy = Instantiate(PrefabMonster, transform.position, transform.rotation);
+        GameObject enemy = Instantiate(PrefabMonster, children[0].position, transform.rotation);
+        Mobfaen mob = enemy.GetComponent<Mobfaen>();
+        mob.NewStart(children);
         AddMobfaen(enemy);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        Timer += Time.deltaTime * MoveSpeed;
 
-        foreach (Mobfaen mob in Mobs){
-            Debug.Log(mob.GetName() + " // " + PathNode.Length + " // " +  mob.GetNodeCount());
-
-            if (mob.GetCurrentPositionHolder() != PathNode[mob.GetNodeCount()].transform.position){
-                mob.transform.position = Vector3.Lerp(mob.transform.position, PathNode[mob.GetNodeCount()].transform.position, Timer*4);
-                mob.SetCurrentPositionHolder(mob.transform.position);
-            } else {
-                if (mob.GetNodeCount() < PathNode.Length){
-                    mob.IncNodeCount();
-                    //CheckNode(mob);
-                } else {
-                    Debug.Log("GAME OVER");
-                    enabled = false;
-                    Destroy(mob);
-                }
-            }
-        }
-
-        //SpawnMonster();
-    }
 }
