@@ -9,13 +9,13 @@ public class SpawnIt : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnMonster", 2, 2);
+   //     InvokeRepeating("SpawnMonster", 2, 2);
     }
 
     // Update is called once per frame
     void SpawnMonster()
     {
-        GameObject enemy = Instantiate(e, transform.position, transform.rotation);
-        path.AddMobfaen(enemy);
+    //    GameObject enemy = Instantiate(e, transform.position, transform.rotation);
+     //   path.AddMobfaen(enemy);
     }
 }
